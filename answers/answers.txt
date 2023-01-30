@@ -1,0 +1,34 @@
+1) mkdir answers
+2) touch answers.txt
+3) nano answers.txt
+4) /c/Users/JohnL/Documents/GitHub/assignment-1/answers
+5) ls -al
+6) you can type ls the the path of the directory you want to see EX: ls /c/Users/JohnL/Documents/GitHub/assignment-1/answers
+7) 'rm' is a dangerous command and should be used with caution. It will delete the file you specify and once you delete it there's no recovering it.
+8) mkdir results
+9) touch my_script.sh
+10) chmod u+x my_script.sh
+11) cd ~/Documents/GitHub/assignment-1/data
+12) wc -l *.csv | sort -n | tail -2 | head -1
+13) for file in ../data/*.csv 
+do
+    ./my_script.sh $file
+done
+14) mkdir unzipped-files
+
+for file in *.zip
+do
+    unzip $file 
+done
+
+for file in ../data/annual_aqi_by_county*.csv
+do
+    mv $file ../unzipped-files
+done
+
+15) rm -r *.zip
+
+16) for file in annual_aqi_by_county_2*.csv
+do
+    cp $file ../../answers/results
+done
